@@ -224,10 +224,10 @@ Media queries provide more control and flexibility for how elements are displaye
     XL: Laptop | Desktop Monitor
 
 
-USING BROWSER DEVELOPMENT TOOLS
+USING BROWSER INSPECT TOOLS
 -------------------------------
 
-Browser development tools are useful for seeing how the webpage will be displayed on different screen sizes. Maintaining visual consistency allows users to experience the website in the same way, no matter which browser they choose.
+Browser inspect tools are useful for seeing how the webpage will be displayed on different browsers and screen sizes. Maintaining visual consistency allows users to experience the website in the same way, regardless ofs which browser or device they choose.
 
 ******************************************/
 
@@ -263,7 +263,7 @@ Browser development tools are useful for seeing how the webpage will be displaye
 
 
 /****************************************/
-/*               TABLETS                */
+/*               TABLET                 */
 /****************************************/
 
 @media screen and (min-width: 781px) {
@@ -343,8 +343,9 @@ Setting a max-width value can be useful to make sure the page remains visually a
  /*
   SEARCH & APPLY
   It's important to practice searching for information about unfamiliar tools and applying what you find to solve a problem and reinforce your learning.
+    - Using 'auto' (margin, padding, & grid)
     - CSS Complex Selectors (siblings & descendants)
     - CSS Pseudo-Classes (the DOM)
     - Flexbox Shorthand (flex-flow & place-content)
-    - Dev Tools (layout tab)
+    - Browser Inspect Tools (layout tab)
 */
