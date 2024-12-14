@@ -1,0 +1,350 @@
+body {
+    box-sizing: border-box;
+    font-family: "DM Serif Text";
+
+    margin: 0 auto;
+}
+
+/******************************************
+
+STYLING MULTIPLE ELEMENTS
+-------------------------
+
+You can use a selector list when applying the same styles to multiple elements. Selectors must be separated by a comma "," (see examples below).
+
+element,
+element2 {
+    background-color: darkgrey;
+}
+
+******************************************/
+
+header,
+footer {
+    height: 50px;
+
+    background-color: black;
+    color: white;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.float-section,
+.grid-section,
+.flexbox-section {
+    margin: 10px 0;
+    padding: 20px;
+
+    border: 5px solid black;
+}
+
+.float-child,
+.grid-child,
+.flex-child {
+    border-radius: 5px;
+}
+
+.float-child h2,
+.grid-child h2,
+.flex-child h2 {
+    text-align: center;
+    padding: 60px 0;
+}
+
+
+/****************************************//*
+/*              FLOAT CONTAINER            */
+/****************************************//*
+
+
+FLOATING INDIVIDUAL ELEMENTS
+----------------------------
+
+The float property positions an element to the left or right of its parent, but there are several side effects to consider:
+
+When using floats on an individual element, it is removed from the normal flow of the page. You must remember to use the CSS "clear" rule on any adjacent elements:
+
+element {
+  clear: both;
+}
+
+Without this rule, the primary element "floats" above the page, and adjacent elements collapse underneath the floated element to fill the space.
+
+Applying the "clear" rule prevents this behavior and restores the normal flow of the page.
+
+
+BUILDING A CONTAINER USING FLOATS
+---------------------------------
+
+When floating elements inside a container a "clearfix" is required. This prevents the container from collapsing and disrupting the normal flow of the page.
+
+NOTE: You can comment/uncomment the clearfix styles below to see the difference
+
+CHALLENGE HINT: There are multiple approaches to completing the float container task for this challenge. You can go through the current styles or find a different solution using the search and apply topics. Working with floats can be tricky, so this can a great way to practice finding and applying unfamiliar concepts!
+
+******************************************/
+
+
+/* CLEARFIX STYLES */
+/*******************/
+
+.float-container:before,
+.float-container:after {
+    display: table;
+    content: "";
+}
+
+.float-container:after {
+    clear: both;
+}
+
+.float-container {
+    zoom: 1;
+}
+
+/*****************************************//*
+
+
+USING COMPOUND SELECTORS
+------------------------
+
+You can use multiple selectors (tags, classes, or ids) linked to the same element for more styling control by adding the second selector without a space. These are called compound selectors.
+
+The compound selectors are used for adding float (left or right) properties to elements that have the "float-child" class.
+
+NOTE: Compound selectors allow you to add different styles to similar elements, depending on what you need.
+
+******************************************/
+
+.float-child {
+    background-color: grey;
+}
+
+.float-child.left {
+    float: left;
+}
+
+.float-child.right {
+    float: right;
+}
+
+
+/****************************************//*
+/*             GRID CONTAINER              */
+/****************************************//*
+
+
+BUILDING A CONTAINER USING GRID
+-------------------------------
+
+You can build the grid container's structure using the grid-template-rows and grid-template-columns properties.
+
+
+Fractional units 'fr' set the width of the child elements in relation to each other. (try experimenting with different fr unit values).
+
+EXAMPLE (1 row of 4 elements)
+
+.grid-container {
+    display: grid;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+******************************************/
+
+.grid-container {
+    display: grid;
+}
+
+.grid-child {
+    background-color: grey;
+}
+
+
+/****************************************//*
+/*            FLEXBOX CONTAINER            */
+/****************************************//*
+
+
+BUILDING A CONTAINER USING FLEXBOX
+----------------------------------
+
+With flexbox, you can create the container structure using flex-direction, flex-wrap, justify-content, and align-content properties.
+
+    flex-direction - determines if elements are arranged in a row or column
+    flex-wrap - determines whether elements resize to remain on the same row/column or a new row/column is created
+    justify-content - aligns elements based on the flex-direction
+    align-content - aligns elements based on the cross-axis of the flex-direction
+
+
+You are able to control the width and height of child elements directly
+
+.flex-child {
+    height: 150px;
+    width: 20%;
+}
+
+******************************************/
+
+.flex-container {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.flex-child {
+    background-color: grey;
+}
+
+
+/****************************************//*
+/*             MEDIA QUERIES               */
+/****************************************//*
+
+
+MOBILE FIRST DEVELOPMENT
+------------------------
+
+In mobile-first development, the default styles are applied based on the mobile screen, and media queries are created to overwrite styles as the screen increases or decreases in size.
+
+
+Media queries provide more control and flexibility for how elements are displayed on different devices. Screen sizes are typically categorized as:
+
+    SM: Mobile
+    MD: Tablet
+    LG: Tablet(Landscape) | Small Laptop
+    XL: Laptop | Desktop Monitor
+
+
+USING BROWSER DEVELOPMENT TOOLS
+-------------------------------
+
+Browser development tools are useful for seeing how the webpage will be displayed on different screen sizes. Maintaining visual consistency allows users to experience the website in the same way, no matter which browser they choose.
+
+******************************************/
+
+/****************************************/
+/*           DEFAULT (MOBILE)           */
+/****************************************/
+
+.float-child {
+    width: 100%;
+
+    margin: 10px auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.grid-child {
+    width: 100%;
+
+    margin: 10px auto;
+}
+
+.flex-child {
+    width: 100%;
+
+    height: 150px;
+
+    margin: 10px auto;
+}
+
+
+/****************************************/
+/*               TABLETS                */
+/****************************************/
+
+@media screen and (min-width: 781px) {
+    .float-child {
+        width: 45%;
+
+        margin: 18px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-child {
+        width: auto;
+
+        margin: 10px;
+    }
+
+    .flex-child {
+        width: 47%;
+
+        height: 150px;
+    }
+}
+
+/****************************************/
+/*   TABLET(LANDSCAPE) | SMALL LAPTOP   */
+/****************************************/
+
+@media screen and (min-width: 1024px) {
+    .float-child {
+        width: 22.75%;
+
+        margin: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .grid-child {
+        margin: 15px;
+    }
+
+    .flex-child {
+        width: 22.5%;
+
+        height: 150px;
+    }
+}
+
+/****************************************/
+/*       LAPTOP | DESKTOP MONITOR       */
+/****************************************/
+
+/******************************************
+
+SETTING MAX-WIDTH
+-----------------
+
+Setting a max-width value can be useful to make sure the page remains visually appealing on larger screens.
+
+******************************************/
+
+@media screen and (min-width: 1441px) {
+    body {
+        max-width: 1440px;
+    }
+}
+
+
+ /*
+  SEARCH & APPLY
+  It's important to practice searching for information about unfamiliar tools and applying what you find to solve a problem and reinforce your learning.
+    - CSS Complex Selectors (siblings & descendants)
+    - CSS Pseudo-Classes (the DOM)
+    - Flexbox Shorthand (flex-flow & place-content)
+    - Dev Tools (layout tab)
+*/
