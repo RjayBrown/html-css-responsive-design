@@ -51,23 +51,25 @@ You can [download the project](https://github.com/RjayBrown/html-css-responsive-
 - Media Queries - Mobile First Development
 - Dev Tools - Viewing Layouts in the Browser
 
+## Build a Mini Project
+
 Once you complete the challenges you'll be able to use your new float, grid, and flexbox skills to build a fully responsive layout from scratch! Find a website you like and build a responsive layout representing the home page. The starter files are in the practice folder. If you run into trouble, you can reach out in the #100Devs [[❓code-help]](https://discord.com/channels/735923219315425401/735925942559440997) channel on Discord. It's an amazing community space filled with supportive developers happy to answer any questions you have!
 
 ## Clone & Run Locally
 
-1 - Open the terminal in your code editor and type (or copy/paste):
+1. Open the terminal in your code editor and type (or copy/paste):
 
-```sh
-git clone https://github.com/RjayBrown/html-css-responsive-design
-```
+   ```
+   git clone https://github.com/RjayBrown/html-css-responsive-design
+   ```
 
-- You can also click the green code button and copy the url (make sure HTTPS is selected)
+   - _**NOTE:** You can also click the green code button and copy the url (make sure HTTPS is selected)_
 
-2 - Navigate to the project folder
+2. Navigate to the project folder
 
-```sh
-cd html-css-responsive-design
-```
+   ```
+   cd html-css-responsive-design
+   ```
 
 You are now able to access and run the project locally.
 
