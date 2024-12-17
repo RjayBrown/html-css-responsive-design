@@ -141,10 +141,14 @@ NOTE: Compound selectors allow you to add different styles to similar elements, 
 BUILDING A CONTAINER USING GRID
 -------------------------------
 
-You can build the grid container's structure using the grid-template-rows and grid-template-columns properties.
+You can build the grid container's structure and align the elements within using the grid-template-rows and grid-template-columns properties.
 
+    - grid-template-rows - determines the row count and width of each element
+    - grid-template-columns - determines the column count and height of each element
+    - justify-content - aligns the grid horizontally within the container
+    - align-content - aligns the grid vertically within the container
 
-Fractional units 'fr' set the width of the child elements in relation to each other. (try experimenting with different fr unit values).
+Fractional units 'fr' set the number and width of the child elements in relation to each other. (try experimenting with different fr unit values).
 
 EXAMPLE (1 row of 4 elements)
 
@@ -174,12 +178,16 @@ EXAMPLE (1 row of 4 elements)
 BUILDING A CONTAINER USING FLEXBOX
 ----------------------------------
 
-With flexbox, you can create the container structure using flex-direction, flex-wrap, justify-content, and align-content properties.
+With flexbox, you can create the container structure and align the elements within using flex-direction, flex-wrap, justify-content, and align-content properties.
 
-    flex-direction - determines if elements are arranged in a row or column
-    flex-wrap - determines whether elements resize to remain on the same row/column or a new row/column is created
-    justify-content - aligns elements based on the flex-direction
-    align-content - aligns elements based on the cross-axis of the flex-direction
+    - flex-direction: determines if elements are arranged in a row or column
+    - flex-wrap: determines whether elements resize to remain on the same row/column or a new row/column is created
+    - justify-content: aligns elements based on the flex-direction
+    - align-items: aligns elements based on the cross-axis of the flex-direction
+    - align-content: aligns how elements align within the container when there is a new row
+        NOTE: The align-content property will only take effect when:
+          - the wrap property is set to wrap or wrap-reverse
+          - there are multiple element rows/columns within the flex-container
 
 
 You are able to control the width and height of child elements directly
@@ -218,10 +226,10 @@ In mobile-first development, the default styles are applied based on the mobile 
 
 Media queries provide more control and flexibility for how elements are displayed on different devices. Screen sizes are typically categorized as:
 
-    SM: Mobile
-    MD: Tablet
-    LG: Tablet(Landscape) | Small Laptop
-    XL: Laptop | Desktop Monitor
+    - SM: Mobile
+    - MD: Tablet
+    - LG: Tablet(Landscape) | Small Laptop
+    - XL: Laptop | Desktop Monitor
 
 
 USING BROWSER INSPECT TOOLS
