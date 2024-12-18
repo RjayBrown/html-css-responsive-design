@@ -53,7 +53,7 @@ You can [download the project](https://github.com/RjayBrown/html-css-responsive-
 
 ## Build a Mini Project
 
-Once you complete the challenges you'll be able to use your new float, grid, and flexbox skills to build a fully responsive layout from scratch! Find a website you like and build a responsive layout representing the home page. The starter files are in the practice folder. If you run into trouble, you can reach out in the #100Devs [[❓code-help]](https://discord.com/channels/735923219315425401/735925942559440997) channel on Discord. It's an amazing community space filled with supportive developers happy to answer any questions you have!
+Once you complete the challenges you'll be able to use your new float, grid, and flexbox skills to build a fully responsive layout from scratch! Find a website you like and build a responsive layout representing the home page. The starter files are in the project folder. If you run into trouble, you can reach out in the #100Devs [[❓code-help]](https://discord.com/channels/735923219315425401/735925942559440997) channel on Discord. It's an amazing community space filled with supportive developers happy to answer any questions you have!
 
 ## Clone & Run Locally
 
