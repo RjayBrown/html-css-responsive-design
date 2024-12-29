@@ -5,7 +5,7 @@
   <a href="">
     <img src="screenshots/project-logo.png" alt="project-name" height="64">
   </a>
-<h1 align="center">Containers & Responsive Design</h1>
+<h1 align="center">Containers<br> +<br> Responsive Design</h1>
 <h4>Learn to build responsive layouts for mobile devices, tablets, laptops, and larger screens</h4>
 </div>
 
