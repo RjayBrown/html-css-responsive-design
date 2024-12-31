@@ -6,7 +6,7 @@
     <img src="screenshots/project-logo.png" alt="project-name" height="64">
   </a>
 <h1 align="center">Containers<br> +<br> Responsive Design</h1>
-<h4>Learn to build responsive layouts for mobile devices, tablets, laptops, and larger screens</h4>
+<h4>Get hands-on practice using media queries with float, grid, and flexbox containers to build responsive layouts for different devices</h4>
 </div>
 
 <div align="center">
