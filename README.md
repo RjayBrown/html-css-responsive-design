@@ -109,7 +109,7 @@ If you found some value here and would like to support, feel free to give the pr
 - [**HTML + CSS - HTML Elements & CSS Fundamentals**](https://github.com/RjayBrown/html-css-introduction)
 - **HTML + CSS - Containers & Responsive Design**
 - [**HTML + CSS - Forms, Links & More CSS Styles**](https://github.com/RjayBrown/html-css-forms-and-links)
-- [**JavaScript - Working with the DOM**](https://github.com/RjayBrown/javascript-dom-intro)
+- [**JavaScript - The DOM & User Interactions**](https://github.com/RjayBrown/javascript-dom-intro)
 - [**JavaScript - Using Fetch API & Promise Chains**](https://github.com/RjayBrown/javascript-fetch-json-data)
 - [**JavaScript - Using Fetch API & Async/Await**](https://github.com/RjayBrown/war-the-card-game)
 
